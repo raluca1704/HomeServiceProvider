@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    android:theme="@style/Theme.HomeServiceProvider.AppBarOverlay">
+
+    <group android:checkableBehavior="single">
+        <!-- My Account Button -->
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_account"
+            android:title="@string/menu_my_account"
+            android:background="@drawable/menu_item_background" />
+
+        <!-- Create Service Button -->
+        <item
+            android:id="@+id/nav_create_service"
+            android:icon="@drawable/ic_plus"
+            android:title="@string/menu_create_service"
+            android:background="@drawable/menu_item_background" />
+        <item
+            android:id="@+id/nav_my_messages"
+            android:icon="@drawable/ic_messages"
+            android:title="My Messages" />
+
+        <!-- Logout Button -->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout"
+            android:background="@drawable/menu_item_background" />
+
+
+    </group>
+</menu>

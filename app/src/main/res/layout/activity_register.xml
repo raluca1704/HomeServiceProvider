@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F2F2F2">
+
+    <!-- Nume -->
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Name"
+        android:textColorHint="@color/colorHint"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Email"
+        android:textColorHint="@color/colorHint"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Parola -->
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Password"
+        android:textColorHint="@color/colorHint"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Confirmare Parola -->
+    <EditText
+        android:id="@+id/confirmPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/colorHint"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Telefon -->
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Phone"
+        android:textColorHint="@color/colorHint"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Adresă -->
+    <EditText
+        android:id="@+id/addressField"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Address"
+        android:textColorHint="@color/colorHint"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp" />
+
+    <!-- Buton Register -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+    android:textSize="16sp"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginTop="16dp" />
+
+</LinearLayout>

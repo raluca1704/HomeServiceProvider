@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">HomeServiceProvider</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+    <string name="go_to_client_profile">Go to Client Profile</string>
+    <string name="go_to_provider_profile">Go to Provider Profile</string>
+    <string name="services_list">List of Services</string>
+
+
+    <string name="service_description">Service Description</string>
+    <string name="service_price">Service Price</string>
+    <string name="service_title">Service Title</string>
+
+    <!-- My Account -->
+    <string name="my_account">My Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="view_service_history">View Service History</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Phone</string>
+    <string name="label_phone">Phone</string>
+    <string name="hint_phone">Enter your phone number</string>
+    <string name="label_name">Name</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="label_email">Email</string>
+    <string name="user_name">User Name</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="profile_updated">Profile updated successfully!</string>
+    <string name="label_service_details">Service Details</string>
+    <string name="hint_service_details">Describe your service</string>
+    <string name="label_price">Price (per hour)</string>
+
+    <string name="button_save">Save Changes</string>
+
+
+    <!-- Chat Page -->
+    <string name="chat_page">Chat Page</string>
+    <string name="type_message">Type your message</string>
+    <string name="send">Send</string>
+    <string name="chat_placeholder">You: </string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <!-- Home Activity -->
+    <string name="go_to_my_account">Go to My Account</string>
+    <string name="go_to_chat_page">Go to Chat Page</string>
+    <string name="title_activity_nav_drawer">navDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_create_service">Create new service</string>
+    <string name="menu_my_account">My account</string>
+    <string name="create_service_title">Create New Service</string>
+    <string name="select_service">Select Service</string>
+
+    <string name="price_hint">Price</string>
+
+
+    <!-- Toast Messages -->
+
+    <string name="toast_services_load_failed">Failed to load services</string>
+
+    <string name="create_new_service">Create New Service</string>
+    <string name="select_existing_service">Select Existing Service</string>
+    <string name="new_service_name">New Service Name</string>
+    <string name="description_hint">Enter Description</string>
+    <string name="location_hint">Enter Location</string>
+    <string name="hint_price">Enter Price</string>
+    <string name="save_service_button">Save Service</string>
+    <string name="spinner_prompt_services">Select Service</string>
+    <string name="toast_service_created">Service created successfully!</string>
+    <string name="toast_service_creation_failed">Service creation failed!</string>
+    <string name="toast_fill_all_fields">Please fill all fields!</string>
+    <string name="title_activity_bottomnav">Bottomnav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bt">bt</string>
+
+</resources>

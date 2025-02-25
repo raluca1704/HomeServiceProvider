@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText pentru a introduce review-ul -->
+    <EditText
+        android:id="@+id/reviewEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your review"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:gravity="top|start" />
+
+    <!-- Buton pentru trimiterea review-ului -->
+    <Button
+        android:id="@+id/submitReviewButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Review"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

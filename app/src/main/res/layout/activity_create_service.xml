@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Radio group for selecting service type (new or existing) -->
+        <RadioGroup
+            android:id="@+id/radio_group_service_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_create_new_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_new_service" />
+
+            <RadioButton
+                android:id="@+id/radio_select_existing_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_existing_service" />
+        </RadioGroup>
+
+        <!-- EditText for new service name, visible only if creating a new service -->
+        <EditText
+            android:id="@+id/input_new_service_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_service_name"
+            android:visibility="gone" />
+
+        <!-- Spinner for existing services, visible only if selecting an existing service -->
+        <Spinner
+            android:id="@+id/spinner_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:prompt="@string/spinner_prompt_services" />
+
+        <!-- Input fields for service details -->
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/location_hint"
+            android:layout_marginTop="16dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_price"
+            android:layout_marginTop="16dp"
+            android:inputType="numberDecimal" />
+
+        <!-- Button to save the service -->
+        <Button
+            android:id="@+id/button_save_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_service_button"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

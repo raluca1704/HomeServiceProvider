@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/lightGreen" />  <!-- Fundal verde deschis -->
+    <corners android:radius="24dp" />  <!-- Colțuri rotunjite pentru iconiță -->
+</shape>

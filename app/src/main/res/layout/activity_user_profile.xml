@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Detalii despre utilizator -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/gray"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/userDetailsTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Details about User"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@color/lightBlue" />
+
+                <TextView
+                    android:id="@+id/userAddressTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/userEmailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/userPhoneTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- TextView pentru recenzii -->
+                <TextView
+                    android:id="@+id/userReviewsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews: No reviews available"
+                    android:padding="8dp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" /> <!-- Initial ascuns -->
+                <!-- Lista de reviews (initial hidden) -->
+                <LinearLayout
+                    android:id="@+id/reviewsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="16dp">
+
+                    <!-- RecyclerView pentru lista de recenzii -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reviewsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+
+                <!-- Buton See Reviews -->
+                <Button
+                    android:id="@+id/seeReviewsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="See Reviews"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:background="@drawable/rounded_button" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Detalii despre serviciu -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/gray"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/serviceDetailsTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Details about Service"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@color/lightBlue" />
+
+                <TextView
+                    android:id="@+id/serviceDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/serviceLocationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/servicePriceTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price:"
+                    android:padding="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Buton Review -->
+        <Button
+            android:id="@+id/reviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave a Review"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button" />
+
+        <!-- Buton Chat -->
+        <Button
+            android:id="@+id/chatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat with User"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+</ScrollView>
