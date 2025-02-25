@@ -41,7 +41,6 @@ public class ReviewActivity extends AppCompatActivity {
 
         submitReviewButton.setOnClickListener(view -> {
             String reviewText = reviewEditText.getText().toString().trim();
-
             if (!reviewText.isEmpty()) {
                 // Creăm un timestamp pentru momentul curent
                 Timestamp timestamp = Timestamp.now();

@@ -51,7 +51,6 @@ public class ChatAdapter extends ArrayAdapter<ChatMessage> {
         if (message != null) {
             messageTextView.setText(message.getText());
         }
-
         return convertView;
     }
 }

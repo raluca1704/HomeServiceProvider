@@ -115,7 +115,6 @@ public class ChatActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     Toast.makeText(ChatActivity.this, "Error sending message.", Toast.LENGTH_SHORT).show();
                 });
-
         db.collection("chats")
                 .document(chatId)
                 .update("lastMessage", messageText, "timestamp", System.currentTimeMillis());
